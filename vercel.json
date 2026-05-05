@@ -1,6 +1,5 @@
 {
-  "buildCommand": "flutter build web --web-renderer html",
+  "buildCommand": "./build.sh",
   "outputDirectory": "build/web",
-  "installCommand": null,
   "framework": null
 }
