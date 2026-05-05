@@ -7,20 +7,23 @@ class AsgardTheme {
 
   static ThemeData get theme {
     return ThemeData(
+      useMaterial3: false,
       scaffoldBackgroundColor: AsgardColors.background,
-      backgroundColor: AsgardColors.background,
       colorScheme: const ColorScheme.dark(
         background: AsgardColors.background,
         surface: AsgardColors.surface,
         primary: AsgardColors.primaryBlue,
         error: AsgardColors.danger,
+        onPrimary: Color(0xFF071014),
+        onBackground: AsgardColors.textPrimary,
+        onSurface: AsgardColors.textPrimary,
       ),
       textTheme: const TextTheme(
-        bodyText2: AsgardTextStyles.body,
-        bodyText1: AsgardTextStyles.body,
-        button: AsgardTextStyles.button,
-        headline1: AsgardTextStyles.h1,
-        caption: AsgardTextStyles.caption,
+        bodyMedium: AsgardTextStyles.body,
+        bodyLarge: AsgardTextStyles.body,
+        labelLarge: AsgardTextStyles.button,
+        headlineLarge: AsgardTextStyles.h1,
+        bodySmall: AsgardTextStyles.caption,
       ),
       inputDecorationTheme: InputDecorationTheme(
         filled: true,
@@ -43,8 +46,8 @@ class AsgardTheme {
       ),
       elevatedButtonTheme: ElevatedButtonThemeData(
         style: ElevatedButton.styleFrom(
-          primary: AsgardColors.primaryBlue,
-          onPrimary: const Color(0xFF071014),
+          backgroundColor: AsgardColors.primaryBlue,
+          foregroundColor: const Color(0xFF071014),
           elevation: 0,
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(22),
@@ -55,7 +58,7 @@ class AsgardTheme {
       ),
       outlinedButtonTheme: OutlinedButtonThemeData(
         style: OutlinedButton.styleFrom(
-          primary: AsgardColors.primaryBlue,
+          foregroundColor: AsgardColors.primaryBlue,
           side: const BorderSide(color: AsgardColors.border),
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(22),

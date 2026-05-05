@@ -122,7 +122,7 @@ class _TopNav extends StatelessWidget {
           OutlinedButton(
             onPressed: () {},
             style: OutlinedButton.styleFrom(
-              primary: AsgardColors.primaryBlue,
+              foregroundColor: AsgardColors.primaryBlue,
               side: const BorderSide(color: AsgardColors.border),
               shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(22)),
               padding: const EdgeInsets.symmetric(horizontal: 14),
@@ -139,8 +139,8 @@ class _TopNav extends StatelessWidget {
           ElevatedButton(
             onPressed: () {},
             style: ElevatedButton.styleFrom(
-              primary: AsgardColors.primaryBlue,
-              onPrimary: const Color(0xFF071014),
+              backgroundColor: AsgardColors.primaryBlue,
+              foregroundColor: const Color(0xFF071014),
               elevation: 0,
               shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(22)),
               padding: const EdgeInsets.symmetric(horizontal: 14),
@@ -244,8 +244,8 @@ class _LoginCard extends StatelessWidget {
           ElevatedButton(
             onPressed: onLogin,
             style: ElevatedButton.styleFrom(
-              primary: AsgardColors.primaryBlue,
-              onPrimary: const Color(0xFF071014),
+              backgroundColor: AsgardColors.primaryBlue,
+              foregroundColor: const Color(0xFF071014),
               elevation: 0,
               shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(22),
